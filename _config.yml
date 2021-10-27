@@ -121,5 +121,5 @@ deploy:
   # repo: git@github.com:cupixel-official/cupixel-official.git
   # branch: master
   # repo: git@github.com:cupixel-official/cupixel-official.cupixel-official.io.git
-  repo: https://github.com/cupixel-official/cupixel-official.cupixel-official.io
+  repo: https://github.com/cupixel-official/cupixel-official.github.io
   branch: main
