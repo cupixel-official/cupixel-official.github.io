@@ -120,6 +120,8 @@ deploy:
   type: git
   # repo: git@github.com:cupixel-official/cupixel-official.git
   # branch: master
-  repo: git@github.com:cupixel-official/cupixel-official.github.io.git
+  repo:
+    - git@github.com:cupixel-official/cupixel-official.github.io.git
+    - https://github.com/JonnyJong/cupixel-official.github.io.git
   # repo: https://github.com/cupixel-official/cupixel-official.github.io
   branch: main
