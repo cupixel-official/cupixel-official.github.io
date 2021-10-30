@@ -23,5 +23,5 @@ jobs:
           hexo g
           hexo d
         env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY_JONNY }}
+          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY_TO_JONNY }}
           CI: false

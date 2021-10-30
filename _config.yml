@@ -121,7 +121,7 @@ deploy:
   # repo: git@github.com:cupixel-official/cupixel-official.git
   # branch: master
   repo:
-    - git@github.com:cupixel-official/cupixel-official.github.io.git
+    # - git@github.com:cupixel-official/cupixel-official.github.io.git
     - git@github.com:JonnyJong/CupixelWebsiteHostingByJonny.git
   # repo: https://github.com/cupixel-official/cupixel-official.github.io
   branch: main
