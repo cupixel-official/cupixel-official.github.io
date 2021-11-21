@@ -27,5 +27,95 @@ categories: 测试
 
 # 文章：增、删、改
 
+## 新增文章
+
+### 手机端
+
+进入后台，点击左上角菜单（下文均称作“侧栏”），点击“文章”进入文章列表，然后点击“新建文章”即可创建新文章。
+
+文章名称规范：
+
+1. 使用英文或拼音（使用汉字因转义会导致链接过长）
+2. 文章名不要有空格，使用下划线“_”代替空格
+3. 其他规范待补全
+
+### 电脑端
+
+进入后台，在左侧栏点击“文章”进入文章列表，然后点击“新建文章”即可创建新文章。
+
+文章名称规范：
+
+1. 使用英文或拼音（使用汉字因转义会导致链接过长）
+2. 文章名不要有空格，使用下划线“_”代替空格
+3. 其他规范待补全
+
+## 更改文章
+
+在文章开头填写文章属性，根据提示填写。
+文章属性使用 `yaml` 语法，如“cover: ”之后有一格空格。
+
+| 正确 | 错误 |
+| --- | --- |
+| cover: true | cover:true |
+
+文章正文使用 markdown 和 html 语法。
+参考 [部署测试 | Cupixel 影视创作社](https://cupixel.pages.dev/hello-world/)
+
+后台的编辑器提供了快速设置格式的功能，在编辑器上方有一行按钮。
+在手机端中，此功能还有些问题，建议参考 [部署测试 | Cupixel 影视创作社](https://cupixel.pages.dev/hello-world/)中的语法。
+在电脑端中，以此类推分别是：表情、标题、粗体、斜体、删除线、链接、无序列表、有序列表、任务列表、引用、分割线、代码块、行内代码、上传图片、表格、导出、全屏切换、预览。
+其中常用的及语法请参考 [部署测试 | Cupixel 影视创作社](https://cupixel.pages.dev/hello-world/)。
+
+## 删除文章
+
+在“文章列表”中，每个文章右侧有两个“操作”按钮，分别是“编辑”和“删除”，前者点击后可修改文章，后者点击后可删除文章。
+
+**删除文章前务必确认！**
+
+# 更新公告
+
+在侧栏中，点击“配置”，会出现多个配置文件，点击最后一个配置文件右侧的编辑按钮，找到约第 70 行。
+
+```yml themes/hexo-theme-matery/_config.yml
+dream:
+  enable: true
+  showTitle: true
+  title: 公告
+  text: 此处编辑公告内容，如需换行需要进行缩进，不熟悉yml语法则不建议换行。
+```
+
+同样需注意语法：
+
+| 正确 | 错误 |
+| --- | --- |
+| text: 此处编辑公告内容，如需换行需要进行缩进，不熟悉yml语法则不建议换行。 | text:此处编辑公告内容，如需换行需要进行缩进，不熟悉yml语法则不建议换行。 |
+
+# 主页视频
+
+在侧栏中，点击“配置”，会出现多个配置文件，点击最后一个配置文件右侧的编辑按钮，找到约第 95 行。
+
+| 属性 | 值 | 作用 |
+| --- | --- | --- |
+| enable | true/false | 启用或禁用 |
+| showTitle | true/false | 显示标题 |
+| title | 文本 | 标题 |
+| iframeUrl | player.bilibili.com/player.html?aid=271&bvid=BV号&cid=3659795&page=1 | 链接 |
+
+```yml themes/hexo-theme-matery/_config.yml
+video:
+  enable: true
+  showTitle: true
+  title: 精彩视频
+  url: # url和iframeUrl其中一个必填
+  iframeUrl: //player.bilibili.com/player.html?aid=271&bvid=BV1xx411c7Xg&cid=3659795&page=1 #在bilibili或者爱奇艺分享时选择iframe，然后填那个url来这里，sample: //player.bilibili.com/player.html?aid=669520137&bvid=BV1oa4y1L7mw&cid=234543483&page=1
+  pic:
+  thumbnails:
+  height: # 如：400
+  autoplay: false # 是否自动播放
+  theme: '#303030'
+  loop: false # 是否循环播放
+  preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7
+```
 
 
