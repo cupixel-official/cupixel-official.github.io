@@ -118,4 +118,54 @@ video:
   volume: 0.7
 ```
 
+# 图片展示
+
+此操作需要登入 Github 仓库进行修改，也可以将图片上传到图床，引用外部图片链接。
+
+如引用外部链接，按以下配置：
+在侧栏中，点击“配置”，会出现多个配置文件，点击最后一个配置文件右侧的编辑按钮，找到约第 243 行。
+按照格式填写，例：
+
+```yml themes/hexo-theme-matery/_config.yml
+myGallery:
+  enable: true
+  data:
+    - /medias/featureimages/0.jpg
+    - /medias/featureimages/1.jpg
+    - /medias/featureimages/2.jpg
+    - https://jonnys.top/img/cover/009.webp
+```
+
+# 主页背景图
+
+此操作需要登入 Github 仓库进行修改，可联系 Jonny 帮助更改。
+
+# 相关链接
+
+此操作需要登入 Github 仓库进行修改，可联系 Jonny 帮助更改。
+
+# 社交、媒体链接
+
+此操作需要登入 Github 仓库进行修改，可联系 Jonny 帮助更改。
+
+# 发布更新
+
+修改完成后，点击右上角“发布”或“保存”即可发布更新。
+
+# 获取更多帮助
+
+更多内容可前往
+
+[http://blinkfox.com/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao](http://blinkfox.com/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao)
+
+查看主题配置文档
+
+或使用邮箱联系（联系前请先尝试在网络上查找资料自行解决，尝试无果再联系）
+
+[jonnyjong@outlook.com](mailto:jonnyjong@outlook.com)
+
+获取帮助，邮箱联系时请在邮件主题开头编写“Cupixel博客：”
+简要说明来意，不定期回复。
+
+[提问的艺术：如何让别人喜欢回答你的提问 - 简书 (jianshu.com)](https://www.jianshu.com/p/232d540fb454)
 
