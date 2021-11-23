@@ -168,5 +168,3 @@ myGallery:
 获取帮助，邮箱联系时请在邮件主题开头编写“Cupixel博客：”
 简要说明来意，不定期回复。
 
-[提问的艺术：如何让别人喜欢回答你的提问 - 简书 (jianshu.com)](https://www.jianshu.com/p/232d540fb454)
-
