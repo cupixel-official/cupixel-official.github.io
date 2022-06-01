@@ -18,7 +18,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "cupixel@outlook.com"
           git config --global user.name "cupixel-official"
-          git init
+          git remote rm origin
           git remote add origin https://github.com/JonnyJong/CupixelWebsiteHostingByJonny.git
           git push -f origin main
         env:
