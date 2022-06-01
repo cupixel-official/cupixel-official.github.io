@@ -1,0 +1,29 @@
+
+- var pageTitle = page.title ? page.title + " | " : ""
+- if (is_archive()) pageTitle = '归档' + ' | '
+- if (is_tag()) pageTitle = '标签：' + page.tag + ' | '
+- if (is_category()) pageTitle = '归类：' + page.category + ' | '
+- if (is_month()) pageTitle = '归档：' + page.month + '/' + page.year + ' | '
+- if (is_year()) pageTitle = '归档：' + page.month + '/' + page.year + ' | '
+- pageTitle += config.title + (config.subtitle ? ' | ' + config.subtitle : "")
+
+doctype html
+html(lang=config.language)
+  head
+    meta(charset='UTF-8')
+    title= pageTitle
+    meta(name="viewport" content="width=device-width")
+    link(rel='stylesheet' href='/css/main.css')
+    link(rel="stylesheet", href="https://at.alicdn.com/t/font_3442140_uytuqmto3w.css")
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+  body
+    include ./navbar.pug
+    include ./header.pug
+    main
+      if body
+        div!= body
+      else
+        block content
+    include ./footer.pug
+    script(type="text/javascript" src='/js/main.js')
+    script(type="text/javascript" async src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')

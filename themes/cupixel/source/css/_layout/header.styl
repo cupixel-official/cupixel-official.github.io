@@ -1,0 +1,46 @@
+@keyframes cupxiel-title
+  0%,50%
+    transform translateY(-10px)
+    opacity 0
+header
+  height 600px
+  max-height calc(100vh - 80px)
+  background #101010
+  @media screen and (max-width: 500px)
+    max-height calc(100vh - 120px)
+  .home-info
+    display flex
+    flex-direction column
+    gap 10px
+    height 100%
+    align-items center
+    justify-content center
+    .title
+      font-size 50px
+      display flex
+      justify-content center
+      flex-wrap wrap
+      gap 16px
+      animation .6s cupxiel-title ease
+      @media screen and (max-width: 800px)
+        flex-direction column
+        align-items center
+        gap 0px
+      @media screen and (max-width: 500px)
+        font-size 40px
+      @media screen and (max-width: 400px)
+        font-size 30px
+      @media screen and (max-width: 300px)
+        font-size 24px
+      @media screen and (max-height: 500px)
+        font-size 40px
+      @media screen and (max-height: 400px)
+        font-size 30px
+      @media screen and (max-height: 300px)
+        font-size 24px
+  &.post
+    max-height calc(100vh - 200px)
+    img
+      height 100%
+      width 100%
+      object-fit cover

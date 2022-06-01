@@ -1,0 +1,21 @@
+-
+  var options = {
+    prev_text: '<',
+    next_text: '>',
+    mid_size: 1,
+    escape: false
+  }
+
+if(!is_post())
+  .paginator
+    !=paginator(options)
+else
+  .paginator-post
+    if(page.prev)
+      .switch-item
+        a.prev-post(href=url_for(page.prev.path))
+          .post-title=page.prev.title
+    if(page.next)
+      .switch-item
+        a.next-post(href=url_for(page.next.path))
+          .post-title= page.next.title

@@ -1,0 +1,11 @@
+//- header
+if is_home() || is_current('/about')
+  header
+    .home-info
+      include ./logo.pug
+      .title
+        div='汕头二中'
+        div='Cupixel 影视创作社'
+else if is_post() && page.cover
+  header.post
+    img(src=page.cover, alt=page.title)

@@ -1,0 +1,26 @@
+if hexo-config('vendor_prefix')
+  @import 'nib'
+
+:root
+  font-family "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+
+body
+  margin 0
+  background #121212
+  color #fff
+  display flex
+  flex-direction column
+  min-height 100vh
+
+::-webkit-scrollbar
+  height 8px
+  width 8px
+::-webkit-scrollbar-thumb
+  background #888
+  &:hover
+    background #eee
+
+main
+  flex 1 0 max-content
+
+@import "_layout/*"

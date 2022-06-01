@@ -1,0 +1,11 @@
+
+if page.posts.length > 0
+  .recent-posts#recent-posts
+    each post in page.posts.data
+      .recent-post-item
+        if post.cover
+        a.cover(href=url_for(post.path))
+          img(src=post.cover alt=post.title)
+        a.title(href=url_for(post.path))= post.title
+        if post.date
+          time(datetime=post.date.toJSON())= date(post.date, date_format)

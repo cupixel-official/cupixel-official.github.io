@@ -1,0 +1,73 @@
+nav
+  height 60px
+  display flex
+  align-items center
+  gap 10px
+  padding 0 20px
+  max-width calc(100vw - 60px)
+  margin auto
+  width 1400px
+  a
+    display flex
+    align-items center
+    color #fff
+    text-decoration none
+  .site
+    font-weight bold
+  img
+    height 60px
+    width 60px
+  .flex
+    flex 1
+  .menu-button
+    display none
+    &:before
+    &:after
+      content ''
+      display block
+      height 4px
+      width 30px
+      margin 10px 0
+      background #eee
+      transition .2s
+  .menu
+    display flex
+    gap 10px
+    .item
+      color #ddd
+      &:hover
+        color #fff
+  @media screen and (max-width: 500px)
+    .menu-button
+      display block
+    .menu
+      // box-sizing border-box
+      position absolute
+      flex-direction column
+      top 60px
+      left 0
+      background #222
+      width 100%
+      text-align right
+      height 0px
+      overflow hidden
+      transition .2s
+      z-index 5
+      .item
+        box-sizing border-box
+        display block
+        width 100%
+        line-height 40px
+        padding 0 20px
+        &:first-child
+          margin-top 20px
+        &:last-child
+          margin-bottom 20px
+    &.show-menu
+      .menu
+        height 230px
+      .menu-button
+        &:before
+          transform translateY(7px) rotate(45deg)
+        &:after
+          transform translateY(-7px) rotate(-45deg)

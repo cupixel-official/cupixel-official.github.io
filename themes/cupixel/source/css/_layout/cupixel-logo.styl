@@ -1,0 +1,55 @@
+@keyframes cupxiel-square-bottom
+  0%
+    height 0%
+@keyframes cupxiel-square-side
+  0%,50%
+    height 0%
+@keyframes cupxiel-square-top
+  0%,66%
+    height 0%
+@keyframes cupxiel-square-glass
+  0%,75%
+    background transparent
+@keyframes cupxiel-logo-box
+  0%
+    transform rotate3d(-1, 0, 0, 0deg) rotate3d(0, -1, 0, 90deg)
+
+.cupixel-logo
+  height s("calc(min(30vw, 30vh, 200px) * 1.4)")
+  width s("min(30vw, 30vh, 200px)")
+  transform-style preserve-3d
+  perspective none
+  transform rotate3d(-1, 0, 0, 35deg) rotate3d(0, -1, 0, 45deg)
+  animation 1s cupxiel-logo-box cubic-bezier(0, 0, 0, 1)
+  .cupixel-square-glass
+  .cupixel-square-bottom
+  .cupixel-square-side
+  .cupixel-square-top
+    height s("min(30vw, 30vh, 200px)")
+    width s("min(30vw, 30vh, 200px)")
+    position absolute
+    &:before
+      content ''
+      display block
+      width 100%
+      height 100%
+  .cupixel-square-glass
+    background #e8e8e852
+    transform s("rotateY(180deg) translateZ(min(15vw, 15vh, 100px))")
+    animation .7s cupxiel-square-glass
+  .cupixel-square-bottom
+    transform s("rotateX(-90deg) rotateZ(180deg) translateZ(min(15vw, 15vh, 100px))")
+    &:before
+      background rgb(204, 204, 204)
+      animation .2s cupxiel-square-bottom cubic-bezier(0, 0, 1, 0)
+  .cupixel-square-side
+    height s("calc(min(30vw, 30vh, 200px) + 1px)")
+    transform s("rotateZ(180deg) translateY(1px) translateZ(min(15vw, 15vh, 100px))")
+    &:before
+      background rgb(238, 238, 238)
+      animation .4s cupxiel-square-side linear
+  .cupixel-square-top
+    transform s("rotateX(90deg) rotateZ(180deg) translateZ(min(15vw, 15vh, 100px))")
+    &:before
+      background rgb(238, 238, 238)
+      animation .6s cupxiel-square-top cubic-bezier(0, 1, 1, 1)

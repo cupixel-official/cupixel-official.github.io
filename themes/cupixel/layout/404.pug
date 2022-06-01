@@ -1,0 +1,11 @@
+extends includes/layout.pug
+
+block content
+  article.error
+    h1 404
+    .subtitle 没有找到您所要访问的页面
+    a(href="javascript:window.history.back()") 返回
+    ='或'
+    a(href="/") 回到首页
+  //- article#page
+  //-   != page.content
